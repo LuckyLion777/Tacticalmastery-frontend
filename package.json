@@ -1,0 +1,49 @@
+{
+  "name": "tacticalmastery-frontend",
+  "version": "1.0.0",
+  "description": "Front-end micro-framework for tacticalmastery",
+  "scripts": {
+    "build": "gulp build",
+    "dbuild": "gulp dbuild",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd ./build && npm start",
+    "install-server": "cd ./src/server && npm install && exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starlightgroup/tacticalmastery-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/starlightgroup/tacticalmastery-frontend/issues"
+  },
+  "homepage": "https://github.com/starlightgroup/tacticalmastery-frontend#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.6.0",
+    "gulp-cli": "^1.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-copy": "^1.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-inject": "^4.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-run": "^1.7.1",
+    "gulp-sha": "^0.1.0",
+    "gulp-strip-comments": "^2.4.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2",
+    "uglifycss": "0.0.27"
+    "gulp-pair": "0.4.4"
+  },
+  "dependencies": {
+    "gulp-shell": "^0.6.3",
+    "le_node": "^1.7.1"
+  }
+}

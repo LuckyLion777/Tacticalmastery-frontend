@@ -1,0 +1,182 @@
+/* RECEIPT STYLES */
+
+body {
+    background-color: #000;
+    background-image: url('../img/bg-receipt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #5a5b5d;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.header > .logo-holder{
+    margin: 30px auto;
+    width: 80%;
+}
+
+.page{
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 4em;
+}
+
+.page > h1,
+.page > .info > h2,
+.page > .receipt{
+    text-align: center;
+}
+
+.page > h1,
+.page > .info > h2{
+    font-family: Michroma, sans-serif;
+    font-weight: 500;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.page > h1 {font-size: 2em}
+
+.page > h1 > span{
+    display: block;
+}
+
+.page > h1 > span:first-child,
+.page > .receipt > h2 > span,
+.page > .receipt > h3 {
+    color: #db2927;
+    font-size: .75em;
+}
+
+/* receipt */
+
+.page > .receipt{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+    border: solid #aaa 1px;
+    padding: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #eee;
+    color: #333;
+    line-height: 1.1;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.05), 0 1px 4px 0 rgba(0,0,0,.08), 0 3px 1px -2px rgba(0,0,0,.2);
+}
+
+.receipt > *,
+.receipt > .items > *,
+.receipt > .payment > *{
+    margin-bottom: .4em;
+}
+
+.receipt > * > .header,
+.receipt > .payment > .final{
+    padding: .4em 0;
+    background-color: rgba(0,0,0,.1);
+    font-weight: 600;
+}
+
+.receipt > .items > div > div,
+.receipt > .payment > div > div{
+    float: left;
+}
+
+.receipt > .items > div > div:nth-child(1){
+    width: 10%;
+}
+
+.receipt > .items > div > div:nth-child(2){
+    width: 70%;
+    text-align: left;
+}
+
+.receipt > .items > div > div:nth-child(3){
+    width: 20%;
+}
+
+.receipt > h2 > span{
+    display: block;
+    margin-top: .3em;
+}
+
+.receipt > .payment > .total > div:first-child{
+    width: 40%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.receipt > .payment > .total > div:last-child{
+    width: 60%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+body .receipt > .items,
+body .receipt > .payment{
+    display: none;
+}
+
+body.loaded .receipt > .items,
+body.loaded .receipt > .payment{
+    display: block;
+}
+
+.receipt > .items > div:after,
+.receipt > .payment > div:after{
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+/* info */
+
+.page > .info{
+    width: 100%;
+    max-width: 764px;
+    margin: 3em auto 0;
+    padding: 10px;
+    font-size: .9em;
+}
+
+.page > .info > p{
+    margin-top: .8em;
+}
+
+/* loading animation */
+
+body.loading .page > .receipt:after{
+    content: "\0020";
+    display: block;
+    margin: 10px auto;
+    width: 64px;
+    height: 64px;
+    background-image: url('../../img/loader-red.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: spinner linear 1.5s infinite;
+    -webkit-animation: spinner linear 1.5s infinite;
+}
+
+@keyframes spinner{
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spinner{
+    0% {-webkit-transform: rotate(0deg)}
+    50% {-webkit-transform: rotate(180deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+@media (max-width: 767px){
+    .page{
+        padding: 10px;
+    }
+}

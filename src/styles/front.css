@@ -1,0 +1,377 @@
+
+/* CONTAINER STYLES */
+
+body {
+    background-color: #000;
+    background-image: url('../img/bg-index.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* HEADER STYLES */
+
+.header {
+    padding: 30px 0 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header > *{
+    float: left;
+}
+
+.header > .header-message{
+    position: relative;
+    bottom: -.5em;
+    width: 30%;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-shadow: 0 0 1px;
+    text-transform: uppercase;
+}
+
+/* FEATURE STYLES */
+
+.features{
+    background: linear-gradient(180deg,#515151 0,#2d2d2d 50%,#0d0d0d 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+.features > div {
+    position: relative;
+    float: left;
+    width: 20%;
+    min-height: 96px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.features > div:nth-child(1) {width: 22%}
+.features > div:nth-child(2),
+.features > div:nth-child(3) {width: 18.5%}
+.features > div:nth-child(4) {width: 17%}
+.features > div:nth-child(5) {width: 24%}
+
+.features > div:after {
+    background: linear-gradient(#595959 0,#b7b7b7 50%,#595959 100%);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: inherit;
+    width: 1px;
+}
+
+.features > div:last-child:after{
+    display: none;
+}
+
+.features > div h4{
+    margin-bottom: 7px;
+    line-height: 1;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.features > div p{
+    font-size: .77em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features > div > div{
+    width: 52px; height: 52px;
+    background-size: 52px;
+    margin-top: -5px;
+    padding: 0;
+    float: left;
+    background-image: url('../img/features.png');
+    background-size: cover;
+    background-position-y: 0;
+}
+
+.features > div:nth-child(1) > div {background-position-x: 0}
+.features > div:nth-child(2) > div {background-position-x: -52px}
+.features > div:nth-child(3) > div {background-position-x: -104px}
+.features > div:nth-child(4) > div {background-position-x: -156px}
+.features > div:nth-child(5) > div {background-position-x: -208px}
+
+
+
+.main-video {
+    background-color: #000;
+}
+
+.main-action{
+    background: #eee;
+    min-height: 400px;
+    padding: 10px 8px 8px 8px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* BUTTON STYLES */
+
+.main-action .btn{
+    color: #fff;
+    width: 100%;
+    font-size: 1.2em;
+    box-shadow: none;
+    margin-bottom: 8px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow: 0 3px 1px rgba(0,0,0,.08);
+}
+
+.main-action .btn:active{
+    transform: scale(0.98);
+}
+
+.main-action .btn .btn-title{
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.main-action .buy-btn{
+    padding: 40px 10px;
+    background-image: linear-gradient(#a9ec36 0,#64ae24 50%,#1c6d11 100%);
+}
+
+.main-action .buy-btn:hover, .buy-btn:active{
+    background-image: linear-gradient(#658e20 0,#416d17 50%,#11420a 100%);
+}
+
+.main-action .dial-btn{
+    padding: 26px 0 20px 165px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    background-image: linear-gradient(#b10000 0,#8b0000 60%,#6f0000 63%,#af1010 100%);
+}
+.main-action .dial-btn:hover, .dial-btn:active{
+    background-image: linear-gradient(#6e0202 0,#530000 60%,#430000 63%,#690a0a 100%);
+}
+
+.main-action .dial-btn .btn-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-action .dial-btn .btn-text {
+    font-size: 1.5em;
+    letter-spacing: .5em;
+}
+
+.main-action .dial-btn .btn-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 165px;
+    background-image: url('../img/icon-btn-call.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-action .dial-btn .btn-icon:after {
+    background-color: #540202;
+    bottom: 0;
+    box-shadow: 0 0 2px #c80000;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+}
+
+.main-action .dial-btn > span{
+    display: block;
+}
+
+.footer-image{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* WISTA MANUAL EMBED STYLES */
+
+.main-video{
+    position: relative;
+    overflow: hidden;
+}
+
+.main-video * {
+    max-width: 100vw;
+    max-height: 100vh;
+    outline: rgba(255,0,0,.6);
+    cursor: pointer !important;
+}
+
+.main-video video{
+    display: block !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: fill !important;
+}
+
+.main-video div > div{
+    position: static !important;
+    width: 100% !important;
+    height: auto;
+}
+
+.main-video div[data-testid="big-play-button"],
+.w-tooltip,
+.wistia_loading_indicator,
+.w-status-bar,
+.w-report-a-problem,
+.w-control,
+.w-icon-rail,
+.w-control-bar,
+.w-menu-bar{
+    display: none !important;
+}
+
+.html-display{
+    background-color: #fff;
+    font-size: .8em;
+    word-break: keep-all;
+    text-wrap: avoid;
+    font-family: monospace;
+    z-index: 100000;
+}
+
+/* WISTIA CUSTOM THUMBNAIL */
+
+.main-video div[id*=".thumbnail"],
+.main-video .wistia_click_to_play{
+    top: 0 !important; left: 0 !important;;
+    width: 100% !important; height: 100% !important;
+}
+
+
+.main-video div[id*=".thumbnail"]:before{
+    content: "\0020";
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 20vw; height: 20vw;
+    margin-top: -10vw; margin-left: -10vw;
+    background-image: url('../img/play.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .5;
+    transition: opacity .5s;
+}
+
+.main-video:hover div[id*=".thumbnail"]:before {opacity: 1}
+
+.main-video div[id*=".thumbnail"]{
+    position: absolute !important;
+    background-image: url('../img/video-thumb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-video img[id*=".thumbnail_img"],
+.main-video .wistia_click_to_play{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* SECURITY DISABLES */
+
+frame, frameset, iframe{
+    display: none !important;
+}
+
+/* MEDIA STYLES */
+
+
+@media(max-width: 767px){
+    .header > .header-message,
+    .features {display: none}
+
+    .header {width: 100%}
+
+    .header > .logo-holder{
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-action .dial-btn {
+        padding-left: 120px;
+    }
+
+    .main-action .dial-btn .btn-icon{
+        background-size: 80px;
+        width: 120px;
+    }
+
+    .main-action .btn .btn-title{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-action .dial-btn {padding-left: 0}
+
+    .main-action .dial-btn .btn-icon {display: none}
+}
+
+@media (max-width: 992px) {
+    .main-action .dial-btn{
+        font-size: .8em;
+    }
+    .features > div h4{
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 993px) {
+    .features > div > div{
+        margin-top: -28px;
+    }
+
+    .features > div h4{
+        text-align: left;
+    }
+
+    .features > div h4,
+    .features > div p {
+        padding-left: 52px;
+    }
+}
+
+/* clearfix */
+.main-video:after,
+.main-video video:after,
+.header:after,
+.features:after{
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}

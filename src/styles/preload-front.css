@@ -1,0 +1,50 @@
+body {
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #4b77b4 0%,#000 8%, #000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+body .main.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 960px;
+}
+
+.header {
+    padding: 30px 0 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header > .header-message{
+    position: relative;
+    bottom: -.5em;
+    width: 30%;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-shadow: 0 0 1px;
+    text-transform: uppercase;
+}
+
+.features > div {
+    position: relative;
+    float: left;
+    width: 20%;
+    min-height: 96px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.features > div:nth-child(1) {width: 22%}
+.features > div:nth-child(2),
+.features > div:nth-child(3) {width: 18.5%}
+.features > div:nth-child(4) {width: 17%}
+.features > div:nth-child(5) {width: 24%}

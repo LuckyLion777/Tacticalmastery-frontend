@@ -1,0 +1,500 @@
+
+/* CONTAINER STYLES */
+
+body{
+    background-color: #f5f5f5;
+}
+
+/* COMMON */
+
+.header > .info-banner{
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+/* HEADER */
+
+.header > .info-banner{
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+    font-weight: 500;
+}
+
+.header > .info-banner > span{
+    text-transform: uppercase;
+    display: block;
+}
+
+.header > .info-banner > .info-middle{
+    font-size: 1.7em;
+    color: #000
+}
+
+/* MAIN CONTAINER (FORM) */
+
+.main.container{
+    margin-top: 24px;
+}
+
+.main.container > .col.group-1{
+    width: 66%;
+    padding-right: 12px;
+}
+
+.main.container > .col.group-2{
+    width: 33%;
+    padding-left: 12px;
+}
+
+@media (max-width: 921px) {
+    .main.container > .col.group-1,
+    .main.container > .col.group-2{
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* STEP TILES */
+
+.step-tile{
+    padding: 24px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.05), 0 1px 4px 0 rgba(0,0,0,.08), 0 3px 1px -2px rgba(0,0,0,.2)
+}
+
+
+.step-1 > .discount-image{
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+.step-tile > h2{
+    position: relative;
+    display: block;
+    background-image: linear-gradient(0deg,#02243d,#0980b9,#02243d);
+    border-radius: 4px;
+    color: #fff;
+    font-family: Michroma, sans-serif;
+    font-size: .6em;
+    font-weight: 500;
+    letter-spacing: .4px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.step-tile > h2 > span{
+    display: inline-block;
+    padding: 7px;
+}
+
+.step-tile > h2 > span:nth-child(1) {
+    background-image: linear-gradient(0deg, #000, #212121, #616161);
+}
+
+.step-tile > h2 > span:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.step-tile .step-content{
+    font-size: .9em;
+}
+
+.step-tile label{
+    position: relative;
+    margin: 5px 0;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.step-tile .label-price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 800;
+}
+
+.step-tile .label-price > span{
+    font-weight: 500;
+}
+
+.step-tile .label-mobile{
+    display: none;
+}
+
+@media (max-width: 991px){
+    .step-tile .label-mobile{
+        display: inline-block;
+    }
+    .step-tile .label-desktop{
+        display: none;
+    }
+}
+
+/* STEP 1*/
+
+.step-1 .step-content{
+    padding-left: 15px;
+}
+
+.step-1 .step-content > div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.step-1 .step-content > div:last-child{
+    margin-bottom: 0;
+}
+
+.step-2 .col-1,
+.step-2 .col-2{
+    width: 50%;
+}
+
+.step-2 .col-1,
+.step-3 .col-1{
+    padding-right: 9px;
+}
+
+.step-2 .col-2,
+.step-3 .col-2{
+    padding-left: 9px;
+}
+
+/* STEP 2 */
+
+/* STEP 3 */
+
+.step-3 .col-1{
+    width: 58.333333%;
+}
+
+.step-3 .col-2{
+    width: 41.666667%;
+}
+
+/* STEP 4 */
+
+.step-4{
+    padding: 12px;
+}
+
+.step-4 > h2{
+    margin: 12px;
+}
+
+.step-4 .payment{
+    background-color: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    border-radius: 18px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.05), 0 1px 4px 0 rgba(0,0,0,.08), 1px 3px 1px -1px rgba(0,0,0,.5);
+}
+
+.step-4 .payment-title{
+    padding: 10px 8px;
+}
+
+.step-4 .payment-title h5{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 2px 0 0;
+}
+
+.step-4 .payment-secure-icon{
+    float: left;
+    margin-right: 2px;
+    max-width: 15px;
+}
+
+.step-4 .payment-content{
+    padding: 0 12px 12px;
+}
+
+.step-4 .img-secure{
+    margin-top: -12px;
+}
+
+.step-4 .img-secure img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.step-4 .col-1,
+.step-4 .col-2,
+.step-4 .col-3{
+    width: 33.3333%;
+}
+
+.step-4 .col-1,
+.step-4 .col-2 {padding-right: 5px}
+
+
+/* END BUTTON */
+.main.container button.checkout-submit{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0;
+    font-family: EurostileLTStd, sans-serif;
+    background: linear-gradient(#cd524f 0,#c54c49 50%,#b13937 95%,#ae3635 100%);
+    border-color: transparent;
+    color: #fff;
+    border-radius: 12px;
+    outline: 0;
+    top: 2px;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.main.container button.checkout-submit > .btn-text{
+    padding: .8em 1em;
+    vertical-align: middle;
+    white-space: pre-line;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    padding-right: 80px;
+}
+
+body .main.container button.checkout-submit > .btn-img-part{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    background-color: rgba(0,0,0,.1);
+}
+
+body .main.container button.checkout-submit > .btn-img-part > .btn-img-holder{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body .main.container button.checkout-submit > .btn-img-part > .btn-img-holder{
+    background-image: url('../../img/icon-truck.png');
+    background-size: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.loading .main.container button.checkout-submit > .btn-img-part > .btn-img-holder{
+    background-image: url('../../img/loader.png');
+    animation: spinner linear 1.5s infinite;
+    -webkit-animation: spinner linear 1.5s infinite;
+}
+
+@keyframes spinner{
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spinner{
+    0% {-webkit-transform: rotate(0deg)}
+    50% {-webkit-transform: rotate(180deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+/* CUSTOM FORM ELEMENTS */
+
+.step-tile input[type=radio]{
+    display: none;
+}
+
+.step-tile input[type=radio]+label::before {
+    border: 2px solid #000;
+    border-radius: 100%;
+    content: '\00a0';
+    display: inline-block;
+    height: 15px;
+    margin: 2px 15px 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 15px
+}
+
+.step-tile input[type=radio]:checked+label::before {
+    background: #000;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #666;
+    text-align: center
+}
+
+/* CREDIT CARD ICON STYLING */
+
+.payment-icons{
+    margin: 0.75em 0;
+}
+
+.payment-icons > .cc-icon{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 33px;
+    opacity: .25;
+    transition: opacity .5s;
+}
+
+
+.payment-icons[data-card-type="visa"] > .cc-icon.cc-visa,
+.payment-icons[data-card-type="mastercard"] > .cc-icon.cc-mastercard,
+.payment-icons[data-card-type="amex"] > .cc-icon.cc-american-express,
+.payment-icons[data-card-type="discover"] > .cc-icon.cc-discover
+{ opacity: 1 }
+
+.payment-icons[data-card-type="visa"] > .cc-icon:not(.cc-visa),
+.payment-icons[data-card-type="mastercard"] > .cc-icon:not(.cc-mastercard),
+.payment-icons[data-card-type="amex"] > .cc-icon:not(.cc-american-express),
+.payment-icons[data-card-type="discover"] > .cc-icon:not(.cc-discover){
+    opacity: .175;
+}
+
+.cc-icon:before{
+    content: "\0020";
+    display: block;
+    width: 90%;
+    max-width: 56px;
+    margin: 0 auto;
+    height: 34px;
+    border-radius: 4px;
+    background-image: url(../../img/cards.png);
+    background-size: 400%;
+    background-position-y: 0;
+}
+
+.cc-visa:before {background-position-x: 0}
+
+.cc-mastercard:before {background-position-x: -100%}
+
+.cc-american:before {background-position-x: -200%}
+
+.cc-discover:before {background-position-x: -300%}
+
+/* CC NUMBER DISPLAY STYLES */
+
+.cc-display{
+    position: relative;
+    border-radius: .25rem;
+    background-color: #fff;
+}
+
+.cc-display > input{
+    background-color: transparent;
+    color: transparent;
+}
+
+.cc-display > .cc-pretty{
+    position: absolute;
+    font-family: Share Tech Mono, sans-serif;
+    top: 0; left: 0;
+    width: 100%; height: 0;
+    padding: .5rem .75rem;
+    overflow-y: visible;
+    font-size: 1em;
+    line-height: 1.25;
+    color: #55595c;
+}
+
+/* cursor */
+.cc-display.focused > .cc-pretty:after{
+    content: "\0020";
+    display: inline-block;
+    position: relative;
+    top: .1em;
+    width: 1px;
+    background-color: rgba(0,0,0,.7);
+    height: 1em;
+    animation: cc-blinker 2s steps(2) infinite;
+}
+
+/* ERROR DISPLAY */
+#error-display{
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top: 90px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px){
+    .header > .info-banner{
+        background-color: #000;
+        color: #ccc;
+    }
+
+    .header > .info-banner > .info-middle{
+        font-size: 1.7em;
+        color: #fff
+    }
+
+    .step-4 .img-secure {margin-top: 0}
+
+    .main.container button.checkout-submit .btn-text{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 992px){
+    .main.container > .col.group-1,
+    .main.container > .col.group-2,
+    .main.container > .col.group-3{
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 575px){
+    .step-2 .col-1,
+    .step-2 .col-2{
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@keyframes cc-blinker{
+    0% {visibility: visible}
+    50% {visibility: visible}
+    51% {visibility: hidden}
+    100% {visibility: hidden}
+}
+
+/* IMAGE FIX */
+
+.step-1 > .discount-image,
+.header > .header-image{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
